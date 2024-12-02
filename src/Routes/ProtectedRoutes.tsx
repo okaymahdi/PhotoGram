@@ -1,11 +1,6 @@
-import * as React from 'react'
 import { Navigate, Outlet, useLocation } from 'react-router'
 
-interface IProtectedRoutesProps {}
-
-const ProtectedRoutes: React.FunctionComponent<IProtectedRoutesProps> = (
-  props
-) => {
+const ProtectedRoutes = () => {
   const location = useLocation()
 
   const isAuth: boolean = false
